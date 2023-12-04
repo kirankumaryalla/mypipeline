@@ -16,7 +16,7 @@ pipeline {
     stage('2build') {
       steps {
         //BUILD THE code using maven
-        sh 'cd mypipeline/spring-boot-app/src && mvn clean package'
+        sh 'cd spring-boot-app/src && mvn clean package'
       }
     }
     
